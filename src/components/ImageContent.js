@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ImageContent() {
   return (
-    <div className="flex items-center justify-center w-[1440px] h-[888px] m-6 relative">
+    <div className="flex items-center justify-center w-[1440px] h-[888px] m-[24px] relative">
       <div className="absolute top-0">
         <Image
           src={Img}
