@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-import img1 from '/Users/deniskorkmaz/Desktop/onepager/public/img (1).png';
-import img2 from '/Users/deniskorkmaz/Desktop/onepager/public/img (2).png';
-import img3 from '/Users/deniskorkmaz/Desktop/onepager/public/img (3).png';
-import img4 from '/Users/deniskorkmaz/Desktop/onepager/public/img (4).png';
-import buttonSVG from '/Users/deniskorkmaz/Desktop/onepager/public/button (1).svg';
+import img1 from '/public/img (1).png';
+import img2 from '/public/img (2).png';
+import img3 from '/public/img (3).png';
+import img4 from '/public/img (4).png';
+import buttonSVG from '/public/button (1).svg';
 
 function SliderSection() {
   const images = [img1, img2, img3, img4, img1, img2, img3, img4];

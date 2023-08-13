@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import iconGermany from '/Users/deniskorkmaz/Desktop/onepager/public/Heel-Produktdetail-Badges_20220519_GERMANY 1.svg';
-import iconWorldwide from '/Users/deniskorkmaz/Desktop/onepager/public/Heel-Produktdetail-Badges_20220519_WORLDWIDE 1.svg';
-import iconScience from '/Users/deniskorkmaz/Desktop/onepager/public/Heel-Produktdetail-Badges_20220519_SCIENCE 1.svg';
+import iconGermany from '/public/Heel-Produktdetail-Badges_20220519_GERMANY 1.svg';
+import iconWorldwide from '/public/Heel-Produktdetail-Badges_20220519_WORLDWIDE 1.svg';
+import iconScience from '/public/Heel-Produktdetail-Badges_20220519_SCIENCE 1.svg';
 
 function IconTitle({ iconSrc, title, description }) {
   return (

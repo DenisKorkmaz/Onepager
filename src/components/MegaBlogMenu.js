@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import blogImage1 from "/Users/deniskorkmaz/Desktop/onepager/public/img (6).png";
-import blogImage2 from "/Users/deniskorkmaz/Desktop/onepager/public/img (8).png";
-import blogImage3 from "/Users/deniskorkmaz/Desktop/onepager/public/img (7).png";
-import arrowIcon from "/Users/deniskorkmaz/Desktop/onepager/public/state=default, size=40, icon=only, style=text, color=black.svg";
+import blogImage1 from "/public/img (6).png";
+import blogImage2 from "/public/img (8).png";
+import blogImage3 from "/public/img (7).png";
+import arrowIcon from "/public/state=default, size=40, icon=only, style=text, color=black.svg";
 
 function BlogItem({ imageSrc, title, description }) {
   return (

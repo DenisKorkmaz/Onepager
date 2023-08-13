@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import buttonIcon from "/Users/deniskorkmaz/Desktop/onepager/public/button (2).svg";
-import youtubeIcon1 from "/Users/deniskorkmaz/Desktop/onepager/public/logo-youtube 1.svg";
+import buttonIcon from "public/button (2).svg";
+import youtubeIcon1 from "public/logo-youtube 1.svg";
 
 function Footer() {
   const scrollToTop = () => {

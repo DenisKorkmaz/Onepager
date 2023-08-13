@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import img5 from "/Users/deniskorkmaz/Desktop/onepager/public/img (5).png";
+import img5 from "/public/img (5).png";
 
 function HighlightSection() {
   return (
