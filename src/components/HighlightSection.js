@@ -4,10 +4,10 @@ import img5 from "/public/img (5).png";
 
 function HighlightSection() {
   return (
-    <div className="flex flex-col w-[1440px] px-[104px] py-10 items-start gap-2 overflow-hidden">
-      <div className="flex items-center w-full h-full">
+    <div className="highlight-section flex flex-col w-[1440px] px-[104px] py-10 items-start gap-2 overflow-hidden">
+      <div className="combined-box flex items-center w-full h-full">
         {/* Content Box */}
-        <div className="flex flex-col w-[400px] h-[468px] p-10 rounded-tl-md rounded-bl-md items-start bg-[#009CC4]">
+        <div className="content-box flex flex-col w-[400px] h-[468px] p-10 rounded-tl-md rounded-bl-md items-start bg-[#009CC4]">
           <h2 className="w-full text-white font-inter text-[32px] font-[300] mb-0 leading-none">
             Enim nulla facilisis viverra lobortis
           </h2>
@@ -24,7 +24,7 @@ function HighlightSection() {
         </div>
 
         {/* Image */}
-        <div className="flex flex-1 bg-cover bg-center">
+        <div className="image-box flex flex-1 bg-cover bg-center">
           <Image
             src={img5}
             alt="Highlight Image"
@@ -35,6 +35,38 @@ function HighlightSection() {
           />
         </div>
       </div>
+
+      <style jsx>{`
+        @media (max-width: 390px) {
+          .highlight-section {
+            width: 390px;
+            padding: 40px 16px;
+          }
+
+          .combined-box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+          }
+
+          .image-box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+          }
+
+          .content-box {
+            display: flex;
+            padding: 40px 32px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            align-self: stretch;
+          }
+        }
+      `}</style>
     </div>
   );
 }

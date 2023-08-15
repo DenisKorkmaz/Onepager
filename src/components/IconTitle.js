@@ -6,7 +6,7 @@ import iconScience from '/public/Heel-Produktdetail-Badges_20220519_SCIENCE 1.sv
 
 function IconTitle({ iconSrc, title, description }) {
   return (
-    <div className="flex flex-col h-[192px] p-10 items-center justify-center gap-4 bg-[#F2F2F2] rounded-md flex-1">
+    <div className="icon-card flex flex-col h-[192px] p-10 items-center justify-center gap-4 bg-[#F2F2F2] rounded-md flex-1">
       <Image src={iconSrc} alt="Icon" width={24} height={24} className="flex-shrink-0" />
       <button className="text-[#4B4B4B] font-inter font-bold text-sm leading-6">
         {title}
@@ -20,7 +20,7 @@ function IconTitle({ iconSrc, title, description }) {
 
 function IconTitleSection() {
   return (
-    <div className="flex w-[1440px] px-[104px] py-10 items-start gap-2 mb-[10px]">
+    <div className="icon-section flex w-[1440px] px-[104px] py-10 items-start gap-2 mb-[10px]">
       <IconTitle 
         iconSrc={iconGermany} 
         title="Highlight A" 
@@ -36,6 +36,28 @@ function IconTitleSection() {
         title="Highlight C" 
         description="Pulvinar diam pellentesque facilisi elementum pellentesque. Commodo leo fermentum leo."
       />
+
+      <style jsx>{`
+        @media (max-width: 390px) {
+          .icon-section {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 390px;
+            padding: 40px 16px;
+            gap: 8px;
+          }
+
+          .icon-card {
+            display: flex;
+            height: 192px;
+            padding: 40px;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            align-self: stretch;
+          }
+        }
+      `}</style>
     </div>
   );
 }

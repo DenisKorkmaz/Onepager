@@ -19,7 +19,7 @@ export default function Home() {
           Our Products
         </h2>
 
-        <div className="flex flex-row space-x-4 mb-2">
+        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-2">
           <ProductCard
             h3Text="Product G"
             pText="A diam dolor gravida eu et nibh morbi at nullam. Enim urna quis vitae arcu donec purus. Faucibus iaculis at duis pulvinar eget. Ipsum ut cras magna."
